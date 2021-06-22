@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AccountDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tblRooznameh">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SanadId" Type="Decimal" Precision="38" Scale="8" Nullable="false" />
+    <Property Name="SanadTarikhMiladi" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SanadTarikhShamsi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SanadTozih" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SanadBedehkar" Type="Int64" />
+    <Property Name="SabadBestankar" Type="Int64" />
+    <Property Name="NameHesab" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NameGroupHesab" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NameSumGroupHesab" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IdHesab" Type="Int64" Nullable="false" />
+    <Property Name="BedOrBes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BuySellVol" Type="Int32" />
+    <Property Name="ArzeshAfzudehTax" Type="Int32" />
+    <Property Name="EnteghaTax" Type="Int32" />
+    <Property Name="KarmozdMoameleh" Type="Int32" />
+  </EntityType>
+  <EntityType Name="tblSetting">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BuyKarmozdRate" Type="Decimal" Precision="18" Scale="8" />
+    <Property Name="SellKarmozdRate" Type="Decimal" Precision="18" Scale="8" />
+    <Property Name="NaghloEnteghalTaxRate" Type="Decimal" Precision="18" Scale="8" />
+    <Property Name="ArzeshAfzoodehTaxRate" Type="Decimal" Precision="18" Scale="8" />
+  </EntityType>
+  <EntityType Name="tblTabaghatHesab">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TabagheyehHesab" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CodeTabaghehHesab" Type="Int32" Nullable="false" />
+    <Property Name="ZirTzbagheyehHesab" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CodeZirtabagheAz" Type="Int32" Nullable="false" />
+    <Property Name="CodeZirtabagheTa" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="AccountDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tblRooznamehs" EntityType="Self.tblRooznameh" />
+    <EntitySet Name="tblSettings" EntityType="Self.tblSetting" />
+    <EntitySet Name="tblTabaghatHesabs" EntityType="Self.tblTabaghatHesab" />
+  </EntityContainer>
+</Schema>

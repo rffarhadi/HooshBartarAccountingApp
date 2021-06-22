@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="AccountDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="tblRooznameh">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SanadId" Type="decimal" Precision="38" Scale="8" Nullable="false" />
+          <Property Name="SanadTarikhMiladi" Type="datetime" Nullable="false" />
+          <Property Name="SanadTarikhShamsi" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="SanadTozih" Type="nvarchar(max)" />
+          <Property Name="SanadBedehkar" Type="bigint" />
+          <Property Name="SabadBestankar" Type="bigint" />
+          <Property Name="NameHesab" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="NameGroupHesab" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="NameSumGroupHesab" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="IdHesab" Type="bigint" Nullable="false" />
+          <Property Name="BedOrBes" Type="nvarchar" MaxLength="50" />
+          <Property Name="BuySellVol" Type="int" />
+          <Property Name="ArzeshAfzudehTax" Type="int" />
+          <Property Name="EnteghaTax" Type="int" />
+          <Property Name="KarmozdMoameleh" Type="int" />
+        </EntityType>
+        <EntityType Name="tblSetting">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BuyKarmozdRate" Type="decimal" Precision="18" Scale="8" />
+          <Property Name="SellKarmozdRate" Type="decimal" Precision="18" Scale="8" />
+          <Property Name="NaghloEnteghalTaxRate" Type="decimal" Precision="18" Scale="8" />
+          <Property Name="ArzeshAfzoodehTaxRate" Type="decimal" Precision="18" Scale="8" />
+        </EntityType>
+        <EntityType Name="tblTabaghatHesab">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TabagheyehHesab" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CodeTabaghehHesab" Type="int" Nullable="false" />
+          <Property Name="ZirTzbagheyehHesab" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="CodeZirtabagheAz" Type="int" Nullable="false" />
+          <Property Name="CodeZirtabagheTa" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="AccountDBModelStoreContainer">
+          <EntitySet Name="tblRooznameh" EntityType="Self.tblRooznameh" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblSetting" EntityType="Self.tblSetting" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblTabaghatHesab" EntityType="Self.tblTabaghatHesab" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AccountDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tblRooznameh">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SanadId" Type="Decimal" Precision="38" Scale="8" Nullable="false" />
+          <Property Name="SanadTarikhMiladi" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="SanadTarikhShamsi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SanadTozih" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SanadBedehkar" Type="Int64" />
+          <Property Name="SabadBestankar" Type="Int64" />
+          <Property Name="NameHesab" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NameGroupHesab" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NameSumGroupHesab" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="IdHesab" Type="Int64" Nullable="false" />
+          <Property Name="BedOrBes" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BuySellVol" Type="Int32" />
+          <Property Name="ArzeshAfzudehTax" Type="Int32" />
+          <Property Name="EnteghaTax" Type="Int32" />
+          <Property Name="KarmozdMoameleh" Type="Int32" />
+        </EntityType>
+        <EntityType Name="tblSetting">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BuyKarmozdRate" Type="Decimal" Precision="18" Scale="8" />
+          <Property Name="SellKarmozdRate" Type="Decimal" Precision="18" Scale="8" />
+          <Property Name="NaghloEnteghalTaxRate" Type="Decimal" Precision="18" Scale="8" />
+          <Property Name="ArzeshAfzoodehTaxRate" Type="Decimal" Precision="18" Scale="8" />
+        </EntityType>
+        <EntityType Name="tblTabaghatHesab">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TabagheyehHesab" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CodeTabaghehHesab" Type="Int32" Nullable="false" />
+          <Property Name="ZirTzbagheyehHesab" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CodeZirtabagheAz" Type="Int32" Nullable="false" />
+          <Property Name="CodeZirtabagheTa" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="AccountDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tblRooznamehs" EntityType="Self.tblRooznameh" />
+          <EntitySet Name="tblSettings" EntityType="Self.tblSetting" />
+          <EntitySet Name="tblTabaghatHesabs" EntityType="Self.tblTabaghatHesab" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AccountDBModelStoreContainer" CdmEntityContainer="AccountDBEntities">
+          <EntitySetMapping Name="tblRooznamehs">
+            <EntityTypeMapping TypeName="AccountDBModel.tblRooznameh">
+              <MappingFragment StoreEntitySet="tblRooznameh">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="SanadId" ColumnName="SanadId" />
+                <ScalarProperty Name="SanadTarikhMiladi" ColumnName="SanadTarikhMiladi" />
+                <ScalarProperty Name="SanadTarikhShamsi" ColumnName="SanadTarikhShamsi" />
+                <ScalarProperty Name="SanadTozih" ColumnName="SanadTozih" />
+                <ScalarProperty Name="SanadBedehkar" ColumnName="SanadBedehkar" />
+                <ScalarProperty Name="SabadBestankar" ColumnName="SabadBestankar" />
+                <ScalarProperty Name="NameHesab" ColumnName="NameHesab" />
+                <ScalarProperty Name="NameGroupHesab" ColumnName="NameGroupHesab" />
+                <ScalarProperty Name="NameSumGroupHesab" ColumnName="NameSumGroupHesab" />
+                <ScalarProperty Name="IdHesab" ColumnName="IdHesab" />
+                <ScalarProperty Name="BedOrBes" ColumnName="BedOrBes" />
+                <ScalarProperty Name="BuySellVol" ColumnName="BuySellVol" />
+                <ScalarProperty Name="ArzeshAfzudehTax" ColumnName="ArzeshAfzudehTax" />
+                <ScalarProperty Name="EnteghaTax" ColumnName="EnteghaTax" />
+                <ScalarProperty Name="KarmozdMoameleh" ColumnName="KarmozdMoameleh" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblSettings">
+            <EntityTypeMapping TypeName="AccountDBModel.tblSetting">
+              <MappingFragment StoreEntitySet="tblSetting">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="BuyKarmozdRate" ColumnName="BuyKarmozdRate" />
+                <ScalarProperty Name="SellKarmozdRate" ColumnName="SellKarmozdRate" />
+                <ScalarProperty Name="NaghloEnteghalTaxRate" ColumnName="NaghloEnteghalTaxRate" />
+                <ScalarProperty Name="ArzeshAfzoodehTaxRate" ColumnName="ArzeshAfzoodehTaxRate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblTabaghatHesabs">
+            <EntityTypeMapping TypeName="AccountDBModel.tblTabaghatHesab">
+              <MappingFragment StoreEntitySet="tblTabaghatHesab">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TabagheyehHesab" ColumnName="TabagheyehHesab" />
+                <ScalarProperty Name="CodeTabaghehHesab" ColumnName="CodeTabaghehHesab" />
+                <ScalarProperty Name="ZirTzbagheyehHesab" ColumnName="ZirTzbagheyehHesab" />
+                <ScalarProperty Name="CodeZirtabagheAz" ColumnName="CodeZirtabagheAz" />
+                <ScalarProperty Name="CodeZirtabagheTa" ColumnName="CodeZirtabagheTa" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

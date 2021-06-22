@@ -1,0 +1,257 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BehComponents</name>
+    </assembly>
+    <members>
+        <member name="T:BehComponents.MonthCalendarX">
+            <summary>
+            Represent a windows control for display and select date in farsi or english date
+            </summary>
+        </member>
+        <member name="F:BehComponents.MonthCalendarX.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BehComponents.MonthCalendarX.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BehComponents.MonthCalendarX.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:BehComponents.MessageBoxFarsiStyle">
+            <summary>
+            A struct for save options of MessageBoxFarsi
+            </summary>
+        </member>
+        <member name="T:BehComponents.MessageBoxFarsi">
+            <summary>
+            Display a message box with more options for Farsi messages
+            </summary>
+        </member>
+        <member name="M:BehComponents.clsCommonFunctions.GetStartIndexDayOfWeek(BehComponents.CalendarTypes,System.DateTime)">
+            <summary>
+            Sat=0 , Fri=6
+            </summary>
+            <param name="type"></param>
+            <param name="date"></param>
+            <returns></returns>
+        </member>
+        <member name="F:BehComponents.DropDownEmpty.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BehComponents.DropDownEmpty.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BehComponents.DropDownEmpty.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:BehComponents.DataGridViewColumnX_EnglishDate">
+            <summary>
+            Represent a column for DataGridViewX with type of DateTime
+            </summary>
+        </member>
+        <member name="T:BehComponents.DateTimePickerX">
+            <summary>
+            Represent a windows control for select date
+            </summary>
+        </member>
+        <member name="F:BehComponents.DateTimePickerX.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BehComponents.DateTimePickerX.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BehComponents.DateTimePickerX.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:BehComponents.DateTimePickerX.DateIsSelected">
+            <summary>
+            If clear button be clicked return false otherwise true
+            </summary>
+        </member>
+        <member name="T:BehComponents.PersianDateTime">
+            <summary>
+            A struct for save date in persian (Shamsi) with more options for it.
+            </summary>
+        </member>
+        <member name="F:BehComponents.MessageBox_Items.frmRetryCancel.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BehComponents.MessageBox_Items.frmRetryCancel.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BehComponents.MessageBox_Items.frmRetryCancel.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BehComponents.MessageBox_Items.frmOK.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BehComponents.MessageBox_Items.frmOK.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BehComponents.MessageBox_Items.frmOK.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:BehComponents.DataGridViewColumnX_PersianDate">
+            <summary>
+            Represent a column for DataGridViewX with type of PersianDateTime
+            </summary>
+        </member>
+        <member name="T:BehComponents.ButtonX">
+            <summary>
+            Represent a window button control with more options
+            </summary>
+        </member>
+        <member name="T:BehComponents.DataGridViewX">
+            <summary>
+            Represent a windows control with more options for Persian and English Dates
+            </summary>
+        </member>
+        <member name="F:BehComponents.DataGridViewX.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BehComponents.DataGridViewX.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BehComponents.DataGridViewX.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:BehComponents.CalendarTypes">
+            <summary>
+            Specify type of calendar
+            </summary>
+        </member>
+        <member name="F:BehComponents.MessageBox_Items.frmOkCancel.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BehComponents.MessageBox_Items.frmOkCancel.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BehComponents.MessageBox_Items.frmOkCancel.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BehComponents.MessageBox_Items.frmYesNo.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BehComponents.MessageBox_Items.frmYesNo.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BehComponents.MessageBox_Items.frmYesNo.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:BehComponents.MessageBox_Items.frmYesNoCancel.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BehComponents.MessageBox_Items.frmYesNoCancel.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BehComponents.MessageBox_Items.frmYesNoCancel.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:BehComponents.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:BehComponents.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:BehComponents.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="F:BehComponents.MessageBox_Items.frmAbortRetryIgnore.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:BehComponents.MessageBox_Items.frmAbortRetryIgnore.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:BehComponents.MessageBox_Items.frmAbortRetryIgnore.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>

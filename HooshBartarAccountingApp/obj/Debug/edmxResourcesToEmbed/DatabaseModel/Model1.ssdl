@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AccountDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblRooznameh">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SanadId" Type="decimal" Precision="38" Scale="8" Nullable="false" />
+    <Property Name="SanadTarikhMiladi" Type="datetime" Nullable="false" />
+    <Property Name="SanadTarikhShamsi" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SanadTozih" Type="nvarchar(max)" />
+    <Property Name="SanadBedehkar" Type="bigint" />
+    <Property Name="SabadBestankar" Type="bigint" />
+    <Property Name="NameHesab" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NameGroupHesab" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NameSumGroupHesab" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="IdHesab" Type="bigint" Nullable="false" />
+    <Property Name="BedOrBes" Type="nvarchar" MaxLength="50" />
+    <Property Name="BuySellVol" Type="int" />
+    <Property Name="ArzeshAfzudehTax" Type="int" />
+    <Property Name="EnteghaTax" Type="int" />
+    <Property Name="KarmozdMoameleh" Type="int" />
+  </EntityType>
+  <EntityType Name="tblSetting">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BuyKarmozdRate" Type="decimal" Precision="18" Scale="8" />
+    <Property Name="SellKarmozdRate" Type="decimal" Precision="18" Scale="8" />
+    <Property Name="NaghloEnteghalTaxRate" Type="decimal" Precision="18" Scale="8" />
+    <Property Name="ArzeshAfzoodehTaxRate" Type="decimal" Precision="18" Scale="8" />
+  </EntityType>
+  <EntityType Name="tblTabaghatHesab">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TabagheyehHesab" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CodeTabaghehHesab" Type="int" Nullable="false" />
+    <Property Name="ZirTzbagheyehHesab" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CodeZirtabagheAz" Type="int" Nullable="false" />
+    <Property Name="CodeZirtabagheTa" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="AccountDBModelStoreContainer">
+    <EntitySet Name="tblRooznameh" EntityType="Self.tblRooznameh" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblSetting" EntityType="Self.tblSetting" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblTabaghatHesab" EntityType="Self.tblTabaghatHesab" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
