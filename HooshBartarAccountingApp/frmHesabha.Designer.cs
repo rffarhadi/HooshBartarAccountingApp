@@ -105,7 +105,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40.61697F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 59.38303F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 182F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 183F));
             this.tableLayoutPanel2.Controls.Add(this.btnDelete, 2, 8);
             this.tableLayoutPanel2.Controls.Add(this.numVol, 1, 6);
             this.tableLayoutPanel2.Controls.Add(this.cmbDaftarKol, 1, 5);
@@ -145,7 +145,7 @@
             this.btnDelete.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnDelete.Location = new System.Drawing.Point(3, 291);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(177, 67);
+            this.btnDelete.Size = new System.Drawing.Size(178, 67);
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "حذف حساب";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -154,7 +154,7 @@
             // numVol
             // 
             this.numVol.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numVol.Location = new System.Drawing.Point(186, 177);
+            this.numVol.Location = new System.Drawing.Point(187, 177);
             this.numVol.Maximum = new decimal(new int[] {
             -559939584,
             902409669,
@@ -174,7 +174,7 @@
             this.cmbDaftarKol.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cmbDaftarKol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDaftarKol.FormattingEnabled = true;
-            this.cmbDaftarKol.Location = new System.Drawing.Point(186, 142);
+            this.cmbDaftarKol.Location = new System.Drawing.Point(187, 142);
             this.cmbDaftarKol.Name = "cmbDaftarKol";
             this.cmbDaftarKol.Size = new System.Drawing.Size(219, 27);
             this.cmbDaftarKol.TabIndex = 12;
@@ -184,7 +184,7 @@
             this.cmbGrouheHesab.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cmbGrouheHesab.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbGrouheHesab.FormattingEnabled = true;
-            this.cmbGrouheHesab.Location = new System.Drawing.Point(186, 110);
+            this.cmbGrouheHesab.Location = new System.Drawing.Point(187, 110);
             this.cmbGrouheHesab.Name = "cmbGrouheHesab";
             this.cmbGrouheHesab.Size = new System.Drawing.Size(219, 27);
             this.cmbGrouheHesab.TabIndex = 11;
@@ -193,7 +193,7 @@
             // txtNameHesab
             // 
             this.txtNameHesab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtNameHesab.Location = new System.Drawing.Point(186, 74);
+            this.txtNameHesab.Location = new System.Drawing.Point(187, 74);
             this.txtNameHesab.Multiline = true;
             this.txtNameHesab.Name = "txtNameHesab";
             this.txtNameHesab.Size = new System.Drawing.Size(219, 30);
@@ -206,7 +206,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.Controls.Add(this.txtCodeHesab, 0, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(186, 34);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(187, 34);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -227,9 +227,9 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(411, 174);
+            this.label5.Location = new System.Drawing.Point(412, 174);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(148, 34);
+            this.label5.Size = new System.Drawing.Size(147, 34);
             this.label5.TabIndex = 5;
             this.label5.Text = "تعداد اولیه:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -238,9 +238,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(411, 139);
+            this.label4.Location = new System.Drawing.Point(412, 139);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(148, 35);
+            this.label4.Size = new System.Drawing.Size(147, 35);
             this.label4.TabIndex = 4;
             this.label4.Text = "نام دفتر کل حساب:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -249,9 +249,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(411, 107);
+            this.label3.Location = new System.Drawing.Point(412, 107);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 32);
+            this.label3.Size = new System.Drawing.Size(147, 32);
             this.label3.TabIndex = 3;
             this.label3.Text = "طبقه حساب:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -260,9 +260,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(411, 71);
+            this.label2.Location = new System.Drawing.Point(412, 71);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(148, 36);
+            this.label2.Size = new System.Drawing.Size(147, 36);
             this.label2.TabIndex = 2;
             this.label2.Text = "نام حساب:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -271,9 +271,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(411, 31);
+            this.label1.Location = new System.Drawing.Point(412, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 40);
+            this.label1.Size = new System.Drawing.Size(147, 40);
             this.label1.TabIndex = 1;
             this.label1.Text = "کد حساب:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -285,14 +285,14 @@
             this.mskTarikh.Location = new System.Drawing.Point(3, 3);
             this.mskTarikh.Mask = "####/##/## ##:##:##";
             this.mskTarikh.Name = "mskTarikh";
-            this.mskTarikh.Size = new System.Drawing.Size(177, 29);
+            this.mskTarikh.Size = new System.Drawing.Size(178, 29);
             this.mskTarikh.TabIndex = 0;
             this.mskTarikh.ValidatingType = typeof(System.DateTime);
             // 
             // txtSharh
             // 
             this.txtSharh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtSharh.Location = new System.Drawing.Point(186, 211);
+            this.txtSharh.Location = new System.Drawing.Point(187, 211);
             this.txtSharh.Multiline = true;
             this.txtSharh.Name = "txtSharh";
             this.txtSharh.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -303,9 +303,9 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Location = new System.Drawing.Point(411, 208);
+            this.label7.Location = new System.Drawing.Point(412, 208);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(148, 80);
+            this.label7.Size = new System.Drawing.Size(147, 80);
             this.label7.TabIndex = 7;
             this.label7.Text = "شرح:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -318,7 +318,7 @@
             this.tableLayoutPanel4.Controls.Add(this.btnEdit, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.btnSave, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(186, 291);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(187, 291);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -352,7 +352,7 @@
             this.btnDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnDisplay.Location = new System.Drawing.Point(3, 211);
             this.btnDisplay.Name = "btnDisplay";
-            this.btnDisplay.Size = new System.Drawing.Size(177, 74);
+            this.btnDisplay.Size = new System.Drawing.Size(178, 74);
             this.btnDisplay.TabIndex = 18;
             this.btnDisplay.Text = "نمایش اطلاعات حساب‌ها";
             this.btnDisplay.UseVisualStyleBackColor = true;

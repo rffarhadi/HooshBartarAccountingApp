@@ -227,6 +227,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAfzayeshSarmayeh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAfzayeshSarmayeh.Designer.cs">
+      <DependentUpon>frmAfzayeshSarmayeh.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBuySellFactor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -303,6 +309,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAfzayeshSarmayeh.resx">
+      <DependentUpon>frmAfzayeshSarmayeh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuySellFactor.resx">
       <DependentUpon>frmBuySellFactor.cs</DependentUpon>
