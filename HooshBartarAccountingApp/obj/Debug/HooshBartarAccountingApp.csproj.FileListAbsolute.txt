@@ -116,3 +116,4 @@ G:\Projects\Top\HooshBartarAccountingApp\HooshBartarAccountingApp\obj\Debug\Hoos
 G:\Projects\Top\HooshBartarAccountingApp\HooshBartarAccountingApp\obj\Debug\HooshBartarAccountingApp.exe
 G:\Projects\Top\HooshBartarAccountingApp\HooshBartarAccountingApp\obj\Debug\HooshBartarAccountingApp.pdb
 G:\Projects\Top\HooshBartarAccountingApp\HooshBartarAccountingApp\obj\Debug\HooshBartarAccountingApp.csproj.AssemblyReference.cache
+G:\Projects\Top\HooshBartarAccountingApp\HooshBartarAccountingApp\obj\Debug\HooshBartarAccountingApp.frmAfzayeshSarmayeh.resources

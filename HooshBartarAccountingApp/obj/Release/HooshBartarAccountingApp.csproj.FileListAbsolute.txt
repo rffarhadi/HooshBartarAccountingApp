@@ -115,3 +115,5 @@ G:\Projects\Top\HooshBartarAccountingApp\HooshBartarAccountingApp\obj\Release\Ho
 G:\Projects\Top\HooshBartarAccountingApp\HooshBartarAccountingApp\obj\Release\HooshBartarAccountingApp.pdb
 G:\Projects\Top\HooshBartarAccountingApp\HooshBartarAccountingApp\bin\Release\BehComponents.dll
 G:\Projects\Top\HooshBartarAccountingApp\HooshBartarAccountingApp\bin\Release\BehComponents.xml
+G:\Projects\Top\HooshBartarAccountingApp\HooshBartarAccountingApp\obj\Release\HooshBartarAccountingApp.csproj.AssemblyReference.cache
+G:\Projects\Top\HooshBartarAccountingApp\HooshBartarAccountingApp\obj\Release\HooshBartarAccountingApp.frmAfzayeshSarmayeh.resources

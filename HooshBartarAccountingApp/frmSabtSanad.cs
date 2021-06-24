@@ -36,9 +36,9 @@ namespace HooshBartarAccountingApp
                 DateTime tomorrow = DateTime.Now.AddDays(1);
                 mskTaTarikh.Text = pc.GetYear(tomorrow).ToString() + pc.GetMonth(tomorrow).ToString("0#") + pc.GetDayOfMonth(tomorrow).ToString("0#") + pc.GetHour(tomorrow).ToString("0#") + pc.GetMinute(tomorrow).ToString("0#") + pc.GetSecond(tomorrow).ToString("0#");
                 ////////////////////////////
-                var HesabhaList = db.tblRooznamehs.OrderBy(a => a.IdHesab).ToList();
-                var IdHesabhaList = HesabhaList.Select(a => a.IdHesab).Distinct().ToArray();
-                var NameHesabhaList = HesabhaList.Select(a => a.NameHesab).Distinct().ToArray();
+                var HesabhaList = db.tblRooznamehs.OrderBy(a => a.NameHesab).ToList();
+                var IdHesabhaList = HesabhaList.Select(a => a.IdHesab).Distinct().OrderBy(a=>a).ToArray();
+                var NameHesabhaList = HesabhaList.Select(a => a.NameHesab).Distinct().OrderBy(a => a).ToArray();
                 foreach (var item in IdHesabhaList)
                 {
                     cmbCode.Items.Add(item);
@@ -87,7 +87,7 @@ namespace HooshBartarAccountingApp
             try
             {
                 int codeHesab = Convert.ToInt32(cmbCode.SelectedItem);
-                string nameHesab = db.tblRooznamehs.Where(a => a.IdHesab == codeHesab).Select(a => a.NameHesab).Distinct().FirstOrDefault();
+                string nameHesab = db.tblRooznamehs.Where(a => a.IdHesab == codeHesab).Select(a => a.NameHesab).Distinct().OrderBy(a => a).FirstOrDefault();
                 cmbName.SelectedItem = nameHesab;
             }
             catch (Exception ex)
@@ -101,13 +101,13 @@ namespace HooshBartarAccountingApp
             try
             {
                 string nameHesab = cmbName.SelectedItem.ToString();
-                var codeHesabList = db.tblRooznamehs.Where(a => a.NameHesab == nameHesab).Select(a => a.IdHesab).Distinct().ToList();
+                var codeHesabList = db.tblRooznamehs.Where(a => a.NameHesab == nameHesab).Select(a => a.IdHesab).Distinct().OrderBy(a => a).ToList();
                 cmbCode.Items.Clear();
                 foreach (var item in codeHesabList)
                 {
                     cmbCode.Items.Add(item);
                 }
-                int codeHesab = Convert.ToInt32(db.tblRooznamehs.Where(a => a.NameHesab == nameHesab).Select(a => a.IdHesab).Distinct().FirstOrDefault());
+                int codeHesab = Convert.ToInt32(db.tblRooznamehs.Where(a => a.NameHesab == nameHesab).Select(a => a.IdHesab).Distinct().OrderBy(a => a).FirstOrDefault());
                 if (codeHesabList.Count == 1)
                 {
                     cmbCode.Text = codeHesab.ToString();
@@ -128,7 +128,7 @@ namespace HooshBartarAccountingApp
         {
             try
             {
-                var NameHesab = db.tblRooznamehs.Where(a => a.NameHesab.Contains(txtSearchName.Text)).Select(a => a.NameHesab).Distinct().FirstOrDefault();
+                var NameHesab = db.tblRooznamehs.Where(a => a.NameHesab.Contains(txtSearchName.Text)).Select(a => a.NameHesab).Distinct().OrderBy(a => a).FirstOrDefault();
    
                 if (NameHesab == null)
                 {
@@ -151,7 +151,7 @@ namespace HooshBartarAccountingApp
             try
             {
                 string mySelectedCode = txtSearchCode.Text;
-                int idHesab = (int)db.tblRooznamehs.Where(a => a.IdHesab.ToString().Contains(mySelectedCode)).Select(a => a.IdHesab).Distinct().FirstOrDefault();
+                int idHesab = (int)db.tblRooznamehs.Where(a => a.IdHesab.ToString().Contains(mySelectedCode)).Select(a => a.IdHesab).Distinct().OrderBy(a => a).FirstOrDefault();
                 if (idHesab == 0)
                 {
                     MessageBoxFarsi.Show("حسابی با این مشخصات وجود ندارد");
@@ -169,12 +169,26 @@ namespace HooshBartarAccountingApp
 
         private void txtSearchCode_MouseClick(object sender, MouseEventArgs e)
         {
-            txtSearchCode.Text = "";
+            try
+            {
+                txtSearchCode.Text = "";
+            }
+            catch (Exception ex)
+            {
+                MessageBoxFarsi.Show(ex.Message.ToString(), "خطا");
+            }
         }
 
         private void txtSearchName_MouseClick(object sender, MouseEventArgs e)
         {
-            txtSearchName.Text = "";
+            try
+            {
+                txtSearchName.Text = "";
+            }
+            catch (Exception ex)
+            {
+                MessageBoxFarsi.Show(ex.Message.ToString(), "خطا");
+            }
         }
 
         private void btnDel_Click(object sender, EventArgs e)

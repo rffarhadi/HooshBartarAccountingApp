@@ -54,7 +54,7 @@ namespace HooshBartarAccountingApp
                 {
                     cmbMoredMoamele.Items.Clear();
                     cmbCodeMoredehMoameleh.Items.Clear();
-                    var MoredehMoamelehArray = db.tblRooznamehs.Where(a => a.IdHesab >= 1002001 && a.IdHesab <= 1002999 || a.IdHesab >= 1005001 && a.IdHesab <= 1005999 || a.IdHesab >= 10010001 && a.IdHesab <= 10019999).OrderBy(a => a.IdHesab).Select(a => a.NameHesab).Distinct().ToArray();
+                    var MoredehMoamelehArray = db.tblRooznamehs.Where(a => a.IdHesab >= 1002001 && a.IdHesab <= 1002999 || a.IdHesab >= 1005001 && a.IdHesab <= 1005999 || a.IdHesab >= 10010001 && a.IdHesab <= 10019999).OrderBy(a => a.NameHesab).Select(a => a.NameHesab).Distinct().OrderBy(a => a).ToArray();
                     if (MoredehMoamelehArray != null)
                     {
                         foreach (var item in MoredehMoamelehArray)
@@ -62,7 +62,7 @@ namespace HooshBartarAccountingApp
                             cmbMoredMoamele.Items.Add(item);
                         }
                     }
-                    var CodeMoredehMoamelehArray = db.tblRooznamehs.Where(a => a.IdHesab >= 1002001 && a.IdHesab <= 1002999 || a.IdHesab >= 1005001 && a.IdHesab <= 1005999 || a.IdHesab >= 10010001 && a.IdHesab <= 10019999).OrderBy(a => a.IdHesab).Select(a => a.IdHesab).Distinct().ToArray();
+                    var CodeMoredehMoamelehArray = db.tblRooznamehs.Where(a => a.IdHesab >= 1002001 && a.IdHesab <= 1002999 || a.IdHesab >= 1005001 && a.IdHesab <= 1005999 || a.IdHesab >= 10010001 && a.IdHesab <= 10019999).OrderBy(a => a.NameHesab).Select(a => a.IdHesab).Distinct().OrderBy(a => a).ToArray();
                     if (CodeMoredehMoamelehArray != null)
                     {
                         foreach (var item in CodeMoredehMoamelehArray)
@@ -75,7 +75,7 @@ namespace HooshBartarAccountingApp
                 {
                     cmbMoredMoamele.Items.Clear();
                     cmbCodeMoredehMoameleh.Items.Clear();
-                    var MoredehMoamelehList = db.tblRooznamehs.Where(a => a.IdHesab >= 1002001 && a.IdHesab <= 1002999 || a.IdHesab >= 1005001 && a.IdHesab <= 1005999 || a.IdHesab >= 10010001 && a.IdHesab <= 10019999).Where(a => a.BuySellVol > 0).OrderBy(a => a.IdHesab).Select(a => a.NameHesab).Distinct().ToArray();
+                    var MoredehMoamelehList = db.tblRooznamehs.Where(a => a.IdHesab >= 1002001 && a.IdHesab <= 1002999 || a.IdHesab >= 1005001 && a.IdHesab <= 1005999 || a.IdHesab >= 10010001 && a.IdHesab <= 10019999).Where(a => a.BuySellVol > 0).OrderBy(a => a.NameHesab).Select(a => a.NameHesab).OrderBy(a => a).Distinct().ToArray();
                     if (MoredehMoamelehList != null)
                     {
                         foreach (var item in MoredehMoamelehList)
@@ -83,7 +83,7 @@ namespace HooshBartarAccountingApp
                             cmbMoredMoamele.Items.Add(item);
                         }
                     }
-                    var CodeMoredehMoamelehList = db.tblRooznamehs.Where(a => a.IdHesab >= 1002001 && a.IdHesab <= 1002999 || a.IdHesab >= 1005001 && a.IdHesab <= 1005999 || a.IdHesab >= 10010001 && a.IdHesab <= 10019999).Where(a => a.BuySellVol > 0).OrderBy(a => a.IdHesab).Select(a => a.IdHesab).Distinct().ToArray();
+                    var CodeMoredehMoamelehList = db.tblRooznamehs.Where(a => a.IdHesab >= 1002001 && a.IdHesab <= 1002999 || a.IdHesab >= 1005001 && a.IdHesab <= 1005999 || a.IdHesab >= 10010001 && a.IdHesab <= 10019999).Where(a => a.BuySellVol > 0).OrderBy(a => a.NameHesab).Select(a => a.IdHesab).OrderBy(a => a).Distinct().ToArray();
                     if (CodeMoredehMoamelehList != null)
                     {
                         foreach (var item in CodeMoredehMoamelehList)
@@ -96,7 +96,7 @@ namespace HooshBartarAccountingApp
                 {
                     cmbTarafMoameleh.Items.Clear();
                     cmbCodeTaraf.Items.Clear();
-                    var NameTarafList = db.tblRooznamehs.Where(a => a.IdHesab >= 2001001 && a.IdHesab <= 2001999).OrderBy(a => a.SanadTarikhMiladi).Select(a => a.NameHesab).Distinct().ToArray();
+                    var NameTarafList = db.tblRooznamehs.Where(a => a.IdHesab >= 2001001 && a.IdHesab <= 2001999).OrderBy(a => a.NameHesab).Select(a => a.NameHesab).Distinct().OrderBy(a => a).ToArray();
                     if (NameTarafList != null)
                     {
                         foreach (var item in NameTarafList)
@@ -104,7 +104,7 @@ namespace HooshBartarAccountingApp
                             cmbTarafMoameleh.Items.Add(item);
                         }
                     }
-                    var CodeTarafList = db.tblRooznamehs.Where(a => a.IdHesab >= 2001001 && a.IdHesab <= 2001999).OrderBy(a => a.SanadTarikhMiladi).Select(a => a.IdHesab).Distinct().ToArray();
+                    var CodeTarafList = db.tblRooznamehs.Where(a => a.IdHesab >= 2001001 && a.IdHesab <= 2001999).OrderBy(a => a.NameHesab).Select(a => a.IdHesab).Distinct().OrderBy(a => a).ToArray();
                     if (CodeTarafList != null)
                     {
                         foreach (var item in CodeTarafList)
@@ -117,7 +117,7 @@ namespace HooshBartarAccountingApp
                 {
                     cmbTarafMoameleh.Items.Clear();
                     cmbCodeTaraf.Items.Clear();
-                    var NameTarafList = db.tblRooznamehs.Where(a => a.IdHesab >= 1003001 && a.IdHesab <= 1003999).OrderBy(a => a.SanadTarikhMiladi).Select(a => a.NameHesab).Distinct().ToArray();
+                    var NameTarafList = db.tblRooznamehs.Where(a => a.IdHesab >= 1003001 && a.IdHesab <= 1003999).OrderBy(a => a.SanadTarikhMiladi).Select(a => a.NameHesab).Distinct().OrderBy(a => a).ToArray();
                     if (NameTarafList != null)
                     {
                         foreach (var item in NameTarafList)
@@ -125,7 +125,7 @@ namespace HooshBartarAccountingApp
                             cmbTarafMoameleh.Items.Add(item);
                         }
                     }
-                    var CodeTarafList = db.tblRooznamehs.Where(a => a.IdHesab >= 1003001 && a.IdHesab <= 1003999).OrderBy(a => a.SanadTarikhMiladi).Select(a => a.IdHesab).Distinct().ToArray();
+                    var CodeTarafList = db.tblRooznamehs.Where(a => a.IdHesab >= 1003001 && a.IdHesab <= 1003999).OrderBy(a => a.NameHesab).Select(a => a.IdHesab).Distinct().ToArray();
                     if (CodeTarafList != null)
                     {
                         foreach (var item in CodeTarafList)
@@ -134,7 +134,7 @@ namespace HooshBartarAccountingApp
                         }
                     }
                 } ///////////
-                var NameHesabBankiList = db.tblRooznamehs.Where(a => a.IdHesab >= 1001001 && a.IdHesab <= 1001999).OrderBy(a => a.SanadTarikhMiladi).Select(a => a.NameHesab).Distinct().ToArray();
+                var NameHesabBankiList = db.tblRooznamehs.Where(a => a.IdHesab >= 1001001 && a.IdHesab <= 1001999).OrderBy(a => a.NameHesab).Select(a => a.NameHesab).Distinct().OrderBy(a => a).ToArray();
                 cmbHesabBanki.Items.Clear();
                 if (NameHesabBankiList != null)
                 {
@@ -148,7 +148,7 @@ namespace HooshBartarAccountingApp
 
                     }
                 }
-                var CodeHesabBankiList = db.tblRooznamehs.Where(a => a.IdHesab >= 1001001 && a.IdHesab <= 1001999).OrderBy(a => a.SanadTarikhMiladi).Select(a => a.IdHesab).Distinct().ToArray();
+                var CodeHesabBankiList = db.tblRooznamehs.Where(a => a.IdHesab >= 1001001 && a.IdHesab <= 1001999).OrderBy(a => a.NameHesab).Select(a => a.IdHesab).Distinct().OrderBy(a => a).ToArray();
                 cmbCodeHesabBanki.Items.Clear();
                 if (CodeHesabBankiList != null)
                 {
@@ -306,7 +306,7 @@ namespace HooshBartarAccountingApp
             try
             {
                 string nameHesabMored = cmbMoredMoamele.SelectedItem.ToString();
-                int codeHesabMored = Convert.ToInt32(db.tblRooznamehs.Where(a => a.NameHesab == nameHesabMored).Select(a => a.IdHesab).Distinct().FirstOrDefault());
+                int codeHesabMored = Convert.ToInt32(db.tblRooznamehs.Where(a => a.NameHesab == nameHesabMored).Select(a => a.IdHesab).Distinct().OrderBy(a => a).FirstOrDefault());
                 cmbCodeMoredehMoameleh.Text = codeHesabMored.ToString();
                 int? vol = db.tblRooznamehs.Where(a => a.IdHesab == codeHesabMored).Select(a => a.BuySellVol).Sum();
                 if (chkSellFactor.Checked && vol == 0 && vol == null)
@@ -343,7 +343,7 @@ namespace HooshBartarAccountingApp
                 if (chkBuyFactor.Checked)
                 {
                     string nameHesabTaraf = cmbTarafMoameleh.SelectedItem.ToString();
-                    int codeHesabTaraf = Convert.ToInt32(db.tblRooznamehs.Where(a => a.NameHesab == nameHesabTaraf && a.IdHesab >= 2001001 && a.IdHesab <= 2001999).Select(a => a.IdHesab).Distinct().FirstOrDefault());
+                    int codeHesabTaraf = Convert.ToInt32(db.tblRooznamehs.Where(a => a.NameHesab == nameHesabTaraf && a.IdHesab >= 2001001 && a.IdHesab <= 2001999).Select(a => a.IdHesab).Distinct().OrderBy(a => a).FirstOrDefault());
                     cmbCodeTaraf.Text = codeHesabTaraf.ToString();
                 }
                 if (chkSellFactor.Checked)
@@ -364,7 +364,7 @@ namespace HooshBartarAccountingApp
         {
             try
             {
-                string NameHesab = db.tblRooznamehs.Where(a => a.IdHesab >= 1002001 && a.IdHesab <= 1002999 || a.IdHesab >= 1005001 && a.IdHesab <= 1005999 || a.IdHesab >= 10010001 && a.IdHesab <= 10019999).Where(a => a.NameHesab.Contains(txtSearchMoredMoameleh.Text)).Select(a => a.NameHesab).Distinct().FirstOrDefault();
+                string NameHesab = db.tblRooznamehs.Where(a => a.IdHesab >= 1002001 && a.IdHesab <= 1002999 || a.IdHesab >= 1005001 && a.IdHesab <= 1005999 || a.IdHesab >= 10010001 && a.IdHesab <= 10019999).Where(a => a.NameHesab.Contains(txtSearchMoredMoameleh.Text)).Select(a => a.NameHesab).Distinct().OrderBy(a => a).FirstOrDefault();
                 if (NameHesab == null)
                 {
                     MessageBoxFarsi.Show("حسابی با این مشخصات وجود ندارد");
@@ -386,7 +386,7 @@ namespace HooshBartarAccountingApp
             {
                 if (chkBuyFactor.Checked)
                 {
-                    var NameHesab = db.tblRooznamehs.Where(a => a.IdHesab >= 2001001 && a.IdHesab <= 2001999).OrderBy(a => a.SanadTarikhMiladi).Where(a => a.NameHesab.Contains(txtSearchTarafMoameleh.Text)).Select(a => a.NameHesab).Distinct().FirstOrDefault();
+                    var NameHesab = db.tblRooznamehs.Where(a => a.IdHesab >= 2001001 && a.IdHesab <= 2001999).OrderBy(a => a.SanadTarikhMiladi).Where(a => a.NameHesab.Contains(txtSearchTarafMoameleh.Text)).Select(a => a.NameHesab).Distinct().OrderBy(a => a).FirstOrDefault();
                     if (NameHesab == null)
                     {
                         MessageBoxFarsi.Show("حسابی با این مشخصات وجود ندارد");
@@ -398,7 +398,7 @@ namespace HooshBartarAccountingApp
                 }
                 else if (chkSellFactor.Checked)
                 {
-                    var NameHesab = db.tblRooznamehs.Where(a => a.IdHesab >= 1003001 && a.IdHesab <= 1003999).OrderBy(a => a.SanadTarikhMiladi).Where(a => a.NameHesab.Contains(txtSearchTarafMoameleh.Text)).Select(a => a.NameHesab).Distinct().FirstOrDefault();
+                    var NameHesab = db.tblRooznamehs.Where(a => a.IdHesab >= 1003001 && a.IdHesab <= 1003999).OrderBy(a => a.SanadTarikhMiladi).Where(a => a.NameHesab.Contains(txtSearchTarafMoameleh.Text)).Select(a => a.NameHesab).Distinct().OrderBy(a => a).FirstOrDefault();
                     if (NameHesab == null)
                     {
                         MessageBoxFarsi.Show("حسابی با این مشخصات وجود ندارد");
@@ -417,12 +417,27 @@ namespace HooshBartarAccountingApp
 
         private void txtSearchTarafMoameleh_MouseClick(object sender, MouseEventArgs e)
         {
-            txtSearchTarafMoameleh.Text = "";
+            try
+            {
+                txtSearchTarafMoameleh.Text = "";
+            }
+            catch (Exception ex)
+            {
+                MessageBoxFarsi.Show(ex.Message.ToString(), "خطا");
+            }
         }
 
         private void txtSearchMoredMoameleh_MouseClick(object sender, MouseEventArgs e)
         {
-            txtSearchMoredMoameleh.Text = "";
+            try
+            {
+                txtSearchMoredMoameleh.Text = "";
+
+            }
+            catch (Exception ex)
+            {
+                MessageBoxFarsi.Show(ex.Message.ToString(), "خطا");
+            }
         }
         public void SabtExcell(DataGridView dgv)
         {

@@ -69,7 +69,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 69.96466F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.03534F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 152F));
             this.tableLayoutPanel2.Controls.Add(this.mskTarikh, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.textBox1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnDisplay, 2, 0);
@@ -87,10 +87,10 @@
             // 
             this.mskTarikh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mskTarikh.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskTarikh.Location = new System.Drawing.Point(294, 3);
+            this.mskTarikh.Location = new System.Drawing.Point(296, 3);
             this.mskTarikh.Mask = "####/##/## ##:##:##";
             this.mskTarikh.Name = "mskTarikh";
-            this.mskTarikh.Size = new System.Drawing.Size(157, 29);
+            this.mskTarikh.Size = new System.Drawing.Size(156, 29);
             this.mskTarikh.TabIndex = 4;
             this.mskTarikh.ValidatingType = typeof(System.DateTime);
             this.mskTarikh.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.mskTarikh_MaskInputRejected);
@@ -99,10 +99,10 @@
             // 
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(457, 3);
+            this.textBox1.Location = new System.Drawing.Point(458, 3);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(374, 29);
+            this.textBox1.Size = new System.Drawing.Size(373, 29);
             this.textBox1.TabIndex = 5;
             this.textBox1.Text = "صورت وضعیت مالی (ترازنامه) منتهی به:";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -111,7 +111,7 @@
             // btnDisplay
             // 
             this.btnDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDisplay.Location = new System.Drawing.Point(154, 3);
+            this.btnDisplay.Location = new System.Drawing.Point(156, 3);
             this.btnDisplay.Name = "btnDisplay";
             this.btnDisplay.Size = new System.Drawing.Size(134, 28);
             this.btnDisplay.TabIndex = 6;
@@ -124,7 +124,7 @@
             this.btnExcel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnExcel.Location = new System.Drawing.Point(3, 3);
             this.btnExcel.Name = "btnExcel";
-            this.btnExcel.Size = new System.Drawing.Size(145, 28);
+            this.btnExcel.Size = new System.Drawing.Size(147, 28);
             this.btnExcel.TabIndex = 7;
             this.btnExcel.Text = "خروجی اکسل";
             this.btnExcel.UseVisualStyleBackColor = true;

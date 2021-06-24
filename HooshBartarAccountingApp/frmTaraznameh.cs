@@ -438,12 +438,14 @@ namespace HooshBartarAccountingApp
                     i = i - 1000;
                     j = j - 1000;
                 }
-                /////////////////////شروع محاسبه جمع حساب‌های بدهی غیرجاری
+                //اتمام حقوق مالکانه
 
-                var grouhBedehiGheyrJariNamesList = db.tblTabaghatHesabs.OrderByDescending(a => a.CodeZirtabagheTa).Where(a => a.CodeTabaghehHesab == 2 && a.CodeZirtabagheTa > 3999).Select(a => new { a.ZirTzbagheyehHesab }).ToList();
                 List<FinancialStatements> LeftHandList = new List<FinancialStatements>();
                 List<FinancialStatements> BedehiGheryList = new List<FinancialStatements>();
-
+                
+                LeftHandList.AddRange(HoghughSahebanList);
+                /////////////////////شروع محاسبه جمع حساب‌های بدهی غیرجاری
+                var grouhBedehiGheyrJariNamesList = db.tblTabaghatHesabs.OrderByDescending(a => a.CodeZirtabagheTa).Where(a => a.CodeTabaghehHesab == 2 && a.CodeZirtabagheTa > 3999).Select(a => new { a.ZirTzbagheyehHesab }).ToList();
                 i = 7001;
                 j = 7999;
                 foreach (var item in grouhBedehiGheyrJariNamesList)
@@ -451,7 +453,7 @@ namespace HooshBartarAccountingApp
                     FinancialStatements t = new FinancialStatements()
                     {
                         NameGroupHesab = item.ZirTzbagheyehHesab,
-                        Mandeh =- AllHesabhaList.Where(a => a.IdHesab.ToString().Substring(0, 1) == "2" && Convert.ToInt32(a.IdHesab.ToString().Substring(3)) <= j && Convert.ToInt32(a.IdHesab.ToString().Substring(3)) >= i).Select(a => a.Balance).Sum(),
+                        Mandeh = -AllHesabhaList.Where(a => a.IdHesab.ToString().Substring(0, 1) == "2" && Convert.ToInt32(a.IdHesab.ToString().Substring(3)) <= j && Convert.ToInt32(a.IdHesab.ToString().Substring(3)) >= i).Select(a => a.Balance).Sum(),
                         IdHesab = AllHesabhaList.Where(a => a.IdHesab.ToString().Substring(0, 1) == "2" && Convert.ToInt32(a.IdHesab.ToString().Substring(3)) <= j && Convert.ToInt32(a.IdHesab.ToString().Substring(3)) >= i).Select(a => a.IdHesab).FirstOrDefault()
                     };
                     LeftHandList.Add(t);
@@ -470,13 +472,12 @@ namespace HooshBartarAccountingApp
                     i = i - 1000;
                     j = j - 1000;
                 }
+                //اتمام بدهی غیرجاری
+
                 ////////////////////شروع بدهی جاری  
                 ///
                 List<FinancialStatements> BedehiJariList = new List<FinancialStatements>();
-
                 var grouhBedehiJariNamesList = db.tblTabaghatHesabs.OrderByDescending(a => a.CodeZirtabagheTa).Where(a => a.CodeTabaghehHesab == 2 && a.CodeZirtabagheTa <= 3999).Select(a => new { a.ZirTzbagheyehHesab, a.CodeZirtabagheAz, a.CodeZirtabagheTa }).ToList();
-
-
                 i = 3001;
                 j = 3999;
                 foreach (var item in grouhBedehiJariNamesList)
@@ -486,7 +487,7 @@ namespace HooshBartarAccountingApp
                         //برای اینکه گروپ بای کردن، یک نام نگه می دارد و آیدی حساب می تواند چند شماره باشد
                         FinancialStatements t = new FinancialStatements();
                         t.NameGroupHesab = item.ZirTzbagheyehHesab;
-                        t.Mandeh = (-AllHesabhaList.Where(a => a.IdHesab.ToString().Substring(0, 1) == "1" && Convert.ToInt32(a.IdHesab.ToString().Substring(3)) <= j+2000 && Convert.ToInt32(a.IdHesab.ToString().Substring(3)) >= i+2000).Where(a => a.Balance < 0).Select(a => a.Balance).Sum())+(-AllHesabhaList.Where(a => a.IdHesab.ToString().Substring(0, 1) == "2" && Convert.ToInt32(a.IdHesab.ToString().Substring(3)) <= j && Convert.ToInt32(a.IdHesab.ToString().Substring(3)) >= i).Where(a => a.Balance < 0).Select(a => a.Balance).Sum());
+                        t.Mandeh = (-AllHesabhaList.Where(a => a.IdHesab.ToString().Substring(0, 1) == "1" && Convert.ToInt32(a.IdHesab.ToString().Substring(3)) <= j + 2000 && Convert.ToInt32(a.IdHesab.ToString().Substring(3)) >= i + 2000).Where(a => a.Balance < 0).Select(a => a.Balance).Sum()) + (-AllHesabhaList.Where(a => a.IdHesab.ToString().Substring(0, 1) == "2" && Convert.ToInt32(a.IdHesab.ToString().Substring(3)) <= j && Convert.ToInt32(a.IdHesab.ToString().Substring(3)) >= i).Where(a => a.Balance < 0).Select(a => a.Balance).Sum());
                         t.IdHesab = 1001001;
                         BedehiJariList.Add(t);
                     }
@@ -500,9 +501,6 @@ namespace HooshBartarAccountingApp
                         };
                         BedehiJariList.Add(t);
                     }
-
-
-
                     if (i >= 1001 && j <= 1999)
                     {
                         FinancialStatements t2 = new FinancialStatements()
@@ -517,15 +515,27 @@ namespace HooshBartarAccountingApp
                     j = j - 1000;
                 }
                 LeftHandList.AddRange(BedehiJariList);
-                LeftHandList.AddRange(HoghughSahebanList);
+                ///////////////////////اتمام بدهی جاری
+
                 for (int k = 0; k <= 2; k++)
                 {
-                    if (k < 2)
+                    if (k == 0)
                     {
-                        FinancialStatements Khali = new FinancialStatements();
-                        LeftHandList.Add(Khali);
+                        FinancialStatements khali = new FinancialStatements();
+                        LeftHandList.Add(khali);
 
                     }
+                    if (k ==1)
+                    {
+                        FinancialStatements TotalDebt = new FinancialStatements()
+                        {
+                            NameGroupHesab = "جمع بدهی‌ها",
+                            Mandeh = BedehiJariList.Select(a=>a.Mandeh).Last()+ BedehiGheryList.Select(a => a.Mandeh).Last(),
+                            IdHesab = 0,
+                        };
+                        LeftHandList.Add(TotalDebt);
+                    }
+
                     if (k == 2)
                     {
                         FinancialStatements TotalDebtAndEquity = new FinancialStatements()

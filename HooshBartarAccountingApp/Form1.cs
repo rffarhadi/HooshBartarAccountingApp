@@ -452,5 +452,21 @@ namespace HooshBartarAccountingApp
                 MessageBoxFarsi.Show(ex.Message.ToString(), "خطاء");
             }
         }
+
+        private void tsmAfzayeshSarmayeh_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Hide();
+                frmAfzayeshSarmayeh frm = new frmAfzayeshSarmayeh();
+                frm.rbnVotingRight.Checked = true;
+                frm.ShowDialog();
+                this.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBoxFarsi.Show("خطائی رخ داده است" + "\n" + "\n" + ex.Message.ToString(), "پیغام خطا", MessageBoxFarsiButtons.OK, MessageBoxFarsiIcon.Error, MessageBoxFarsiDefaultButton.Button1);
+            }
+        }
     }
 }

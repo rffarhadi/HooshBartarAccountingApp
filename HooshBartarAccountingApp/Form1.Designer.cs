@@ -40,6 +40,7 @@
             this.فاکتورخریدToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.فاکتورفروشToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmAfzayeshSarmayeh = new System.Windows.Forms.ToolStripMenuItem();
             this.صورتهایمالیToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ترازنامهToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
@@ -59,7 +60,7 @@
             this.RightToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.LeftToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.ContentPanel = new System.Windows.Forms.ToolStripContentPanel();
-            this.tsmAfzayeshSarmayeh = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,6 +123,7 @@
             this.فاکتورخریدToolStripMenuItem,
             this.toolStripSeparator4,
             this.فاکتورفروشToolStripMenuItem,
+            this.toolStripSeparator6,
             this.tsmAfzayeshSarmayeh});
             this.ثبتسندToolStripMenuItem.Name = "ثبتسندToolStripMenuItem";
             this.ثبتسندToolStripMenuItem.Size = new System.Drawing.Size(178, 32);
@@ -157,6 +159,13 @@
             this.فاکتورفروشToolStripMenuItem.Size = new System.Drawing.Size(270, 36);
             this.فاکتورفروشToolStripMenuItem.Text = "فاکتور فروش";
             this.فاکتورفروشToolStripMenuItem.Click += new System.EventHandler(this.فاکتورفروشToolStripMenuItem_Click);
+            // 
+            // tsmAfzayeshSarmayeh
+            // 
+            this.tsmAfzayeshSarmayeh.Name = "tsmAfzayeshSarmayeh";
+            this.tsmAfzayeshSarmayeh.Size = new System.Drawing.Size(270, 36);
+            this.tsmAfzayeshSarmayeh.Text = "ثبت افزایش سرمایه";
+            this.tsmAfzayeshSarmayeh.Click += new System.EventHandler(this.tsmAfzayeshSarmayeh_Click);
             // 
             // صورتهایمالیToolStripMenuItem
             // 
@@ -296,11 +305,10 @@
             // 
             this.ContentPanel.Size = new System.Drawing.Size(150, 150);
             // 
-            // tsmAfzayeshSarmayeh
+            // toolStripSeparator6
             // 
-            this.tsmAfzayeshSarmayeh.Name = "tsmAfzayeshSarmayeh";
-            this.tsmAfzayeshSarmayeh.Size = new System.Drawing.Size(270, 36);
-            this.tsmAfzayeshSarmayeh.Text = "ثبت افزایش سرمایه";
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            this.toolStripSeparator6.Size = new System.Drawing.Size(267, 6);
             // 
             // Form1
             // 
@@ -356,6 +364,7 @@
         private System.Windows.Forms.ToolStripContentPanel ContentPanel;
         private System.Windows.Forms.ToolStripMenuItem خروجToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem tsmAfzayeshSarmayeh;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
     }
 }
 

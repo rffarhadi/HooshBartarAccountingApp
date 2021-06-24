@@ -155,7 +155,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 89.35323F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.64677F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 157F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 162F));
             this.tableLayoutPanel3.Controls.Add(this.btnSabt, 3, 0);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel6, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel7, 0, 0);
@@ -178,7 +178,7 @@
             this.btnSabt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSabt.Location = new System.Drawing.Point(3, 3);
             this.btnSabt.Name = "btnSabt";
-            this.btnSabt.Size = new System.Drawing.Size(152, 48);
+            this.btnSabt.Size = new System.Drawing.Size(157, 48);
             this.btnSabt.TabIndex = 0;
             this.btnSabt.Text = "ثبت سند";
             this.btnSabt.UseVisualStyleBackColor = true;
@@ -187,12 +187,12 @@
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.ColumnCount = 6;
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.16049F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.83951F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 151F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 282F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 176F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.8481F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.1519F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 51F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 134F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 275F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 164F));
             this.tableLayoutPanel6.Controls.Add(this.txtSearchNam, 5, 0);
             this.tableLayoutPanel6.Controls.Add(this.label2, 2, 0);
             this.tableLayoutPanel6.Controls.Add(this.mskAzTarikh, 1, 0);
@@ -200,11 +200,11 @@
             this.tableLayoutPanel6.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.tableLayoutPanel12, 4, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(465, 57);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(469, 57);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(869, 48);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(865, 48);
             this.tableLayoutPanel6.TabIndex = 1;
             // 
             // txtSearchNam
@@ -213,7 +213,7 @@
             this.txtSearchNam.Location = new System.Drawing.Point(3, 3);
             this.txtSearchNam.Multiline = true;
             this.txtSearchNam.Name = "txtSearchNam";
-            this.txtSearchNam.Size = new System.Drawing.Size(171, 42);
+            this.txtSearchNam.Size = new System.Drawing.Size(159, 42);
             this.txtSearchNam.TabIndex = 7;
             this.txtSearchNam.TextChanged += new System.EventHandler(this.txtSearchNam_TextChanged);
             // 
@@ -221,9 +221,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(613, 0);
+            this.label2.Location = new System.Drawing.Point(577, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 48);
+            this.label2.Size = new System.Drawing.Size(45, 48);
             this.label2.TabIndex = 5;
             this.label2.Text = "تا تاریخ:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -232,10 +232,10 @@
             // 
             this.mskAzTarikh.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.mskAzTarikh.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskAzTarikh.Location = new System.Drawing.Point(683, 16);
+            this.mskAzTarikh.Location = new System.Drawing.Point(628, 16);
             this.mskAzTarikh.Mask = "####/##/## ##:##:##";
             this.mskAzTarikh.Name = "mskAzTarikh";
-            this.mskAzTarikh.Size = new System.Drawing.Size(132, 29);
+            this.mskAzTarikh.Size = new System.Drawing.Size(167, 29);
             this.mskAzTarikh.TabIndex = 0;
             this.mskAzTarikh.ValidatingType = typeof(System.DateTime);
             // 
@@ -243,10 +243,10 @@
             // 
             this.mskTaTarikh.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.mskTaTarikh.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskTaTarikh.Location = new System.Drawing.Point(462, 16);
+            this.mskTaTarikh.Location = new System.Drawing.Point(443, 16);
             this.mskTaTarikh.Mask = "####/##/## ##:##:##";
             this.mskTaTarikh.Name = "mskTaTarikh";
-            this.mskTaTarikh.Size = new System.Drawing.Size(145, 29);
+            this.mskTaTarikh.Size = new System.Drawing.Size(128, 29);
             this.mskTaTarikh.TabIndex = 1;
             this.mskTaTarikh.ValidatingType = typeof(System.DateTime);
             // 
@@ -254,9 +254,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(821, 0);
+            this.label1.Location = new System.Drawing.Point(801, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 48);
+            this.label1.Size = new System.Drawing.Size(61, 48);
             this.label1.TabIndex = 4;
             this.label1.Text = "از تاریخ:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -269,11 +269,11 @@
             this.tableLayoutPanel12.Controls.Add(this.txtSearchDaftarKol, 1, 0);
             this.tableLayoutPanel12.Controls.Add(this.txtSearchIdSanad, 0, 0);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(180, 3);
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(168, 3);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 1;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(276, 42);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(269, 42);
             this.tableLayoutPanel12.TabIndex = 8;
             // 
             // txtSearchDaftarKol
@@ -282,7 +282,7 @@
             this.txtSearchDaftarKol.Location = new System.Drawing.Point(3, 3);
             this.txtSearchDaftarKol.Multiline = true;
             this.txtSearchDaftarKol.Name = "txtSearchDaftarKol";
-            this.txtSearchDaftarKol.Size = new System.Drawing.Size(125, 36);
+            this.txtSearchDaftarKol.Size = new System.Drawing.Size(121, 36);
             this.txtSearchDaftarKol.TabIndex = 8;
             this.txtSearchDaftarKol.TextChanged += new System.EventHandler(this.txtSearchDaftarKol_TextChanged);
             // 
@@ -295,14 +295,14 @@
             0,
             0,
             262144});
-            this.txtSearchIdSanad.Location = new System.Drawing.Point(134, 3);
+            this.txtSearchIdSanad.Location = new System.Drawing.Point(130, 3);
             this.txtSearchIdSanad.Maximum = new decimal(new int[] {
             268435456,
             1042612833,
             542101086,
             0});
             this.txtSearchIdSanad.Name = "txtSearchIdSanad";
-            this.txtSearchIdSanad.Size = new System.Drawing.Size(139, 27);
+            this.txtSearchIdSanad.Size = new System.Drawing.Size(136, 27);
             this.txtSearchIdSanad.TabIndex = 9;
             this.txtSearchIdSanad.ValueChanged += new System.EventHandler(this.txtSearchIdSanad_ValueChanged);
             // 
@@ -311,17 +311,17 @@
             this.tableLayoutPanel7.ColumnCount = 4;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.197605F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 98.8024F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 285F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 176F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 283F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 165F));
             this.tableLayoutPanel7.Controls.Add(this.label8, 3, 0);
             this.tableLayoutPanel7.Controls.Add(this.btnDisplay, 1, 0);
             this.tableLayoutPanel7.Controls.Add(this.tableLayoutPanel11, 2, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(465, 3);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(469, 3);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(869, 48);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(865, 48);
             this.tableLayoutPanel7.TabIndex = 5;
             // 
             // label8
@@ -330,7 +330,7 @@
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label8.Location = new System.Drawing.Point(3, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(171, 48);
+            this.label8.Size = new System.Drawing.Size(160, 48);
             this.label8.TabIndex = 13;
             this.label8.Text = "جستجوی سند بر مبنای نام حساب:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -338,9 +338,9 @@
             // btnDisplay
             // 
             this.btnDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDisplay.Location = new System.Drawing.Point(465, 3);
+            this.btnDisplay.Location = new System.Drawing.Point(452, 3);
             this.btnDisplay.Name = "btnDisplay";
-            this.btnDisplay.Size = new System.Drawing.Size(397, 42);
+            this.btnDisplay.Size = new System.Drawing.Size(406, 42);
             this.btnDisplay.TabIndex = 15;
             this.btnDisplay.Text = "نمایش بر مبنای تاریخ";
             this.btnDisplay.UseVisualStyleBackColor = true;
@@ -354,11 +354,11 @@
             this.tableLayoutPanel11.Controls.Add(this.label6, 0, 0);
             this.tableLayoutPanel11.Controls.Add(this.label7, 0, 0);
             this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel11.Location = new System.Drawing.Point(180, 3);
+            this.tableLayoutPanel11.Location = new System.Drawing.Point(169, 3);
             this.tableLayoutPanel11.Name = "tableLayoutPanel11";
             this.tableLayoutPanel11.RowCount = 1;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(279, 42);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(277, 42);
             this.tableLayoutPanel11.TabIndex = 16;
             // 
             // label6
@@ -367,7 +367,7 @@
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label6.Location = new System.Drawing.Point(3, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 42);
+            this.label6.Size = new System.Drawing.Size(122, 42);
             this.label6.TabIndex = 13;
             this.label6.Text = "جستجو بر اساس نام دفتر کل:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -376,9 +376,9 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Location = new System.Drawing.Point(132, 0);
+            this.label7.Location = new System.Drawing.Point(131, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(144, 42);
+            this.label7.Size = new System.Drawing.Size(143, 42);
             this.label7.TabIndex = 12;
             this.label7.Text = "جستجوی سند بر مبنای شماره سند:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -386,7 +386,7 @@
             // btnDelete
             // 
             this.btnDelete.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDelete.Location = new System.Drawing.Point(161, 3);
+            this.btnDelete.Location = new System.Drawing.Point(166, 3);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(194, 48);
             this.btnDelete.TabIndex = 2;
@@ -397,9 +397,9 @@
             // btnExcell
             // 
             this.btnExcell.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnExcell.Location = new System.Drawing.Point(361, 57);
+            this.btnExcell.Location = new System.Drawing.Point(366, 57);
             this.btnExcell.Name = "btnExcell";
-            this.btnExcell.Size = new System.Drawing.Size(98, 48);
+            this.btnExcell.Size = new System.Drawing.Size(97, 48);
             this.btnExcell.TabIndex = 2;
             this.btnExcell.Text = "گزارش اکسل";
             this.btnExcell.UseVisualStyleBackColor = true;
@@ -408,9 +408,9 @@
             // btnEdit
             // 
             this.btnEdit.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnEdit.Location = new System.Drawing.Point(361, 3);
+            this.btnEdit.Location = new System.Drawing.Point(366, 3);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(98, 48);
+            this.btnEdit.Size = new System.Drawing.Size(97, 48);
             this.btnEdit.TabIndex = 1;
             this.btnEdit.Text = "ویرایش سند";
             this.btnEdit.UseVisualStyleBackColor = true;
@@ -428,7 +428,7 @@
             "بر مبنای حساب (معین حساب)",
             "بر مبنای گروه حساب (دفتر کل)",
             "بر مبنای طبقه حساب "});
-            this.cmbReport.Location = new System.Drawing.Point(161, 57);
+            this.cmbReport.Location = new System.Drawing.Point(166, 57);
             this.cmbReport.Name = "cmbReport";
             this.cmbReport.Size = new System.Drawing.Size(194, 27);
             this.cmbReport.TabIndex = 6;
@@ -438,7 +438,7 @@
             this.btnReadExcell.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnReadExcell.Location = new System.Drawing.Point(3, 57);
             this.btnReadExcell.Name = "btnReadExcell";
-            this.btnReadExcell.Size = new System.Drawing.Size(152, 48);
+            this.btnReadExcell.Size = new System.Drawing.Size(157, 48);
             this.btnReadExcell.TabIndex = 7;
             this.btnReadExcell.Text = "ثبت اسناد از اکسل";
             this.btnReadExcell.UseVisualStyleBackColor = true;
@@ -487,7 +487,7 @@
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 99F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 102F));
             this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 51F));
-            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 199F));
+            this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 204F));
             this.tableLayoutPanel8.Controls.Add(this.numAfzoodehTaxRate, 3, 0);
             this.tableLayoutPanel8.Controls.Add(this.label11, 2, 0);
             this.tableLayoutPanel8.Controls.Add(this.chkSellFactor, 1, 0);
@@ -514,7 +514,7 @@
             0,
             0,
             131072});
-            this.numAfzoodehTaxRate.Location = new System.Drawing.Point(789, 3);
+            this.numAfzoodehTaxRate.Location = new System.Drawing.Point(794, 3);
             this.numAfzoodehTaxRate.Maximum = new decimal(new int[] {
             3,
             0,
@@ -528,7 +528,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Location = new System.Drawing.Point(888, 0);
+            this.label11.Location = new System.Drawing.Point(893, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(143, 56);
             this.label11.TabIndex = 9;
@@ -539,9 +539,9 @@
             // 
             this.chkSellFactor.AutoSize = true;
             this.chkSellFactor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chkSellFactor.Location = new System.Drawing.Point(1037, 3);
+            this.chkSellFactor.Location = new System.Drawing.Point(1042, 3);
             this.chkSellFactor.Name = "chkSellFactor";
-            this.chkSellFactor.Size = new System.Drawing.Size(146, 50);
+            this.chkSellFactor.Size = new System.Drawing.Size(143, 50);
             this.chkSellFactor.TabIndex = 4;
             this.chkSellFactor.Text = "فاکتور فروش";
             this.chkSellFactor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -552,9 +552,9 @@
             // 
             this.chkBuyFactor.AutoSize = true;
             this.chkBuyFactor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chkBuyFactor.Location = new System.Drawing.Point(1189, 3);
+            this.chkBuyFactor.Location = new System.Drawing.Point(1191, 3);
             this.chkBuyFactor.Name = "chkBuyFactor";
-            this.chkBuyFactor.Size = new System.Drawing.Size(139, 50);
+            this.chkBuyFactor.Size = new System.Drawing.Size(137, 50);
             this.chkBuyFactor.TabIndex = 3;
             this.chkBuyFactor.Text = "فاکتور خرید";
             this.chkBuyFactor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -565,7 +565,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Location = new System.Drawing.Point(665, 0);
+            this.label9.Location = new System.Drawing.Point(670, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(118, 56);
             this.label9.TabIndex = 7;
@@ -579,7 +579,7 @@
             this.mskTarikh.Location = new System.Drawing.Point(3, 3);
             this.mskTarikh.Mask = "####/##/## ##:##:##";
             this.mskTarikh.Name = "mskTarikh";
-            this.mskTarikh.Size = new System.Drawing.Size(194, 29);
+            this.mskTarikh.Size = new System.Drawing.Size(199, 29);
             this.mskTarikh.TabIndex = 2;
             this.mskTarikh.ValidatingType = typeof(System.DateTime);
             // 
@@ -587,7 +587,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Location = new System.Drawing.Point(455, 0);
+            this.label10.Location = new System.Drawing.Point(460, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(109, 56);
             this.label10.TabIndex = 8;
@@ -603,7 +603,7 @@
             0,
             0,
             196608});
-            this.numEnteghalTaxRate.Location = new System.Drawing.Point(570, 3);
+            this.numEnteghalTaxRate.Location = new System.Drawing.Point(575, 3);
             this.numEnteghalTaxRate.Name = "numEnteghalTaxRate";
             this.numEnteghalTaxRate.Size = new System.Drawing.Size(89, 27);
             this.numEnteghalTaxRate.TabIndex = 11;
@@ -617,7 +617,7 @@
             0,
             0,
             262144});
-            this.numKarmozdRate.Location = new System.Drawing.Point(356, 3);
+            this.numKarmozdRate.Location = new System.Drawing.Point(361, 3);
             this.numKarmozdRate.Name = "numKarmozdRate";
             this.numKarmozdRate.Size = new System.Drawing.Size(93, 27);
             this.numKarmozdRate.TabIndex = 12;
@@ -776,7 +776,7 @@
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 194F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 246F));
             this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 141F));
-            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 201F));
+            this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 206F));
             this.tableLayoutPanel9.Controls.Add(this.numPrice, 5, 1);
             this.tableLayoutPanel9.Controls.Add(this.numVol, 4, 1);
             this.tableLayoutPanel9.Controls.Add(this.txtSharh, 3, 1);
@@ -809,14 +809,14 @@
             54,
             0});
             this.numPrice.Name = "numPrice";
-            this.numPrice.Size = new System.Drawing.Size(196, 27);
+            this.numPrice.Size = new System.Drawing.Size(201, 27);
             this.numPrice.TabIndex = 4;
             this.numPrice.ThousandsSeparator = true;
             // 
             // numVol
             // 
             this.numVol.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.numVol.Location = new System.Drawing.Point(205, 40);
+            this.numVol.Location = new System.Drawing.Point(210, 40);
             this.numVol.Maximum = new decimal(new int[] {
             -559939584,
             902409669,
@@ -830,7 +830,7 @@
             // txtSharh
             // 
             this.txtSharh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtSharh.Location = new System.Drawing.Point(346, 40);
+            this.txtSharh.Location = new System.Drawing.Point(351, 40);
             this.txtSharh.Multiline = true;
             this.txtSharh.Name = "txtSharh";
             this.txtSharh.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -842,7 +842,7 @@
             this.cmbMoredMoamele.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cmbMoredMoamele.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbMoredMoamele.FormattingEnabled = true;
-            this.cmbMoredMoamele.Location = new System.Drawing.Point(592, 40);
+            this.cmbMoredMoamele.Location = new System.Drawing.Point(597, 40);
             this.cmbMoredMoamele.Name = "cmbMoredMoamele";
             this.cmbMoredMoamele.Size = new System.Drawing.Size(188, 27);
             this.cmbMoredMoamele.TabIndex = 1;
@@ -852,7 +852,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(346, 0);
+            this.label3.Location = new System.Drawing.Point(351, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(240, 37);
             this.label3.TabIndex = 9;
@@ -863,7 +863,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(205, 0);
+            this.label4.Location = new System.Drawing.Point(210, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(135, 37);
             this.label4.TabIndex = 10;
@@ -876,7 +876,7 @@
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label5.Location = new System.Drawing.Point(3, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(196, 37);
+            this.label5.Size = new System.Drawing.Size(201, 37);
             this.label5.TabIndex = 11;
             this.label5.Text = "قیمت معامله";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -884,7 +884,7 @@
             // txtSearchMoredMoameleh
             // 
             this.txtSearchMoredMoameleh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtSearchMoredMoameleh.Location = new System.Drawing.Point(592, 3);
+            this.txtSearchMoredMoameleh.Location = new System.Drawing.Point(597, 3);
             this.txtSearchMoredMoameleh.Multiline = true;
             this.txtSearchMoredMoameleh.Name = "txtSearchMoredMoameleh";
             this.txtSearchMoredMoameleh.Size = new System.Drawing.Size(188, 31);
@@ -897,10 +897,10 @@
             // txtSearchTarafMoameleh
             // 
             this.txtSearchTarafMoameleh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtSearchTarafMoameleh.Location = new System.Drawing.Point(786, 3);
+            this.txtSearchTarafMoameleh.Location = new System.Drawing.Point(791, 3);
             this.txtSearchTarafMoameleh.Multiline = true;
             this.txtSearchTarafMoameleh.Name = "txtSearchTarafMoameleh";
-            this.txtSearchTarafMoameleh.Size = new System.Drawing.Size(157, 31);
+            this.txtSearchTarafMoameleh.Size = new System.Drawing.Size(153, 31);
             this.txtSearchTarafMoameleh.TabIndex = 6;
             this.txtSearchTarafMoameleh.Text = "جستجوی طرف معامله";
             this.txtSearchTarafMoameleh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -912,18 +912,18 @@
             this.cmbTarafMoameleh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cmbTarafMoameleh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTarafMoameleh.FormattingEnabled = true;
-            this.cmbTarafMoameleh.Location = new System.Drawing.Point(786, 40);
+            this.cmbTarafMoameleh.Location = new System.Drawing.Point(791, 40);
             this.cmbTarafMoameleh.Name = "cmbTarafMoameleh";
-            this.cmbTarafMoameleh.Size = new System.Drawing.Size(157, 27);
+            this.cmbTarafMoameleh.Size = new System.Drawing.Size(153, 27);
             this.cmbTarafMoameleh.TabIndex = 0;
             this.cmbTarafMoameleh.SelectedIndexChanged += new System.EventHandler(this.cmbTarafMoameleh_SelectedIndexChanged);
             // 
             // btnInsert
             // 
             this.btnInsert.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnInsert.Location = new System.Drawing.Point(949, 40);
+            this.btnInsert.Location = new System.Drawing.Point(950, 40);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(67, 45);
+            this.btnInsert.Size = new System.Drawing.Size(66, 45);
             this.btnInsert.TabIndex = 12;
             this.btnInsert.Text = "اضافه";
             this.btnInsert.UseVisualStyleBackColor = true;
@@ -932,9 +932,9 @@
             // btnDel
             // 
             this.btnDel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDel.Location = new System.Drawing.Point(949, 3);
+            this.btnDel.Location = new System.Drawing.Point(950, 3);
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(67, 31);
+            this.btnDel.Size = new System.Drawing.Size(66, 31);
             this.btnDel.TabIndex = 13;
             this.btnDel.Text = "حذف";
             this.btnDel.UseVisualStyleBackColor = true;
